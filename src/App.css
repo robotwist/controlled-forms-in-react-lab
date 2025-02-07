@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Windsor+Light+Condensed&display=swap');
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #121212; /* Dark mode background */
+  color: #ffffff; /* Dark mode text color */
+  font-family: 'Windsor Light Condensed', sans-serif; /* Windsor Light Condensed font */
 }
 
 .logo {
@@ -25,6 +30,92 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  background-color: #333; /* Dark mode input background */
+  color: #fff; /* Dark mode input text color */
+  border: 1px solid #555; /* Dark mode input border */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Windsor Light Condensed', sans-serif; /* Windsor Light Condensed font */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #888; /* Grey background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px;
+  font-family: 'Windsor Light Condensed', sans-serif; /* Windsor Light Condensed font */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #777; /* Darker grey on hover */
+}
+
+.bookshelfDiv {
+  padding: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formDiv {
+  width: 60%;
+  border: 1px solid #fff; /* Dark mode border */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #1e1e1e; /* Dark mode form background */
+  border-radius: 20px; /* Rounded corners for the form */
+}
+
+.bookCardsDiv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.bookCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #fff; /* Dark mode border */
+  padding: 15px;
+  width: 60%; /* Make the book card longer than wide */
+  height: 300px; /* Set a fixed height for the book card */
+  margin: 15px 10px;
+  background-color: #2e2e2e; /* Dark mode book card background */
+  color: #fff; /* Dark mode book card text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Book card shadow */
+  border-radius: 5px; /* Rounded corners */
+  transition: transform 0.2s; /* Smooth hover effect */
+  font-family: 'Windsor Light Condensed', sans-serif; /* Windsor Light Condensed font */
+  text-align: center; /* Center text */
+}
+
+.bookCard:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 @media (prefers-reduced-motion: no-preference) {

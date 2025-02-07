@@ -6,7 +6,11 @@ body {
   justify-content: center;
   min-width: 100vw;
   min-height: 100vh;
+  background-color: #121212; /* Dark mode background */
+  color: #ffffff; /* Dark mode text color */
+  font-family: 'Windsor Light Condensed', sans-serif; /* Windsor Light Condensed font */
 }
+
 form {
   display: flex;
   flex-direction: column;
