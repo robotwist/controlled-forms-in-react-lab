@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import '../../App.css';
 function Bookshelf() {
     const [books, setBooks] = useState([
         { title: 'Bible', author: 'God' },
@@ -15,6 +15,8 @@ function Bookshelf() {
         { title: 'The Lord of the Rings', author: 'J.R.R. Tolkien' },
         { title: 'The Silmarillion', author: 'J.R.R. Tolkien' },
         { title: 'The Fellowship of the Ring', author: 'J.R.R. Tolkien' },
+        { title: 'The Sun Also Rises', author: 'Ernest Hemingway' },
+
     ]);
 
     const [newBook, setNewBook] = useState({ title: '', author: '' });

@@ -89,10 +89,10 @@ button:hover {
 
 .bookCardsDiv {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   width: 90%;
   margin-top: 20px;
+  justify-content: center;
 }
 
 .bookCard {
@@ -102,8 +102,8 @@ button:hover {
   flex-direction: column;
   border: 1px solid #fff; /* Dark mode border */
   padding: 15px;
-  width: 60%; /* Make the book card longer than wide */
-  height: 300px; /* Set a fixed height for the book card */
+  width: 40%; /* Make the book card longer than wide */
+  height: 200px; /* Set a fixed height for the book card */
   margin: 15px 10px;
   background-color: #2e2e2e; /* Dark mode book card background */
   color: #fff; /* Dark mode book card text color */
@@ -116,6 +116,28 @@ button:hover {
 
 .bookCard:hover {
   transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+@media (min-width: 600px) {
+  .bookCardsDiv {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .bookCard {
+    width: 30%; /* Adjust width for two rows */
+  }
+}
+
+@media (min-width: 900px) {
+  .bookCardsDiv {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .bookCard {
+    width: 10%; /* Adjust width for one row */
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
